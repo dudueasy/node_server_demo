@@ -16,6 +16,11 @@ app.get('/api', (request, response, next)=>{
   )
 })
 
-app.get('*', (request, response, next)=>{
+app.post('/post/api',(request, response, next)=>{ 
+  let body = request.body | 'null'
+  response.send(`服务器收到了以下数据: ${body}`) 
+}) 
+
+app.use('*', (request, response, next)=>{
   response.end('welcome!') 
 })

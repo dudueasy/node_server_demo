@@ -13,5 +13,6 @@ npm start
 ~~~
 
 * 接口
-get('/api')
+  * get('/api')
+  * post('/post/api')
 
