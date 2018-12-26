@@ -10,7 +10,7 @@ app.get('/api', (request, response, next)=>{
     {
       data:{
         id: '111',
-        message:'request successed' 
+        message:'request succeeded' 
       } 
     } 
   )
